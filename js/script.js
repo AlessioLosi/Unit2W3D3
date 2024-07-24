@@ -39,10 +39,22 @@
       button.addEventListener('click', () => {
         col.remove();
       });
+      const button1 = document.createElement('button');
+      button1.classList.add('btn', 'btn-success');
+      button1.innerText = 'Compra ora';
+      button1.addEventListener('click', () => {
+        const chart=document.createElement('ul')
+        const elementChart=document.createElement('li')
+        chart.appendChild('elementChart');
+        elementChart.appendChild('col');
+        
+      });
 
       cardBody.appendChild(cardTitle);
       cardBody.appendChild(cardPrice);
       cardBody.appendChild(button);
+      cardBody.appendChild(button1);
+
 
       card.appendChild(img);
       card.appendChild(cardBody);
